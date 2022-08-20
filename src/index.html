@@ -21,44 +21,49 @@
 
   <div class="section2 min-h-[500px] w-4/12 flex flex-col gap-10 ">
 
-    <div class="offer bg-custome-blue text-zinc-50 py-[15px] px-[20px] text-center text-[16px] rounded-md shadow-2xl shadow-black-500/100" >
+    <div class="offer bg-custome-blue text-zinc-50 py-[15px] px-[20px] text-center text-[16px] rounded-md shadow-custome-s-shadow" >
      <strong>Try it free 7 days</strong> <span class="font-light">then $20/mo. thereafter</span> 
     </div>
     
-    <form action="" class="form bg-white p-8 inline-block" id="form">
-      <div class="form_control w-full mb-2">
+    <form action="" class="form bg-white p-8 inline-block rounded-[10px] shadow-custome-s-shadow" id="form">
+      <div class="form_control w-full mb-5 ">
         <label for="first_name" class="hidden">First Name</label>
-        <input class="block w-full border border-gray-200 rounded-[5px] p-3 " type="text" placeholder="First Name">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="text" placeholder="First Name">
         <i class="fa-solid fa-circle-check"></i>
         <i class="fa-solid fa-circle-exclamation"></i>
         <small>Error Message</small>
       </div>
 
-      <div class="form_control mb-2">
+      <div class="form_control w-full mb-5">
         <label for="last_name" class="hidden">Last Name</label>
-        <input type="text" placeholder="Last Name">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="text" placeholder="Last Name">
         <i class="fa-solid fa-circle-check"></i>
         <i class="fa-solid fa-circle-exclamation"></i>
         <small>Error Message</small>
       </div>
 
-      <div class="form_control mb-2">
+      <div class="form_control w-full mb-5">
         <label for="email" class="hidden">email</label>
-        <input type="email" placeholder="Email">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="email" placeholder="Email">
         <i class="fa-solid fa-circle-check"></i>
         <i class="fa-solid fa-circle-exclamation"></i>
         <small>Error Message</small>
       </div>
 
-      <div class="form_control mb-2">
+      <div class="form_control w-full mb-5">
         <label for="password" class="hidden">password</label>
-        <input type="password" placeholder="Password">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="password" placeholder="Password">
         <i class="fa-solid fa-circle-check"></i>
         <i class="fa-solid fa-circle-exclamation"></i>
         <small>Error Message</small>
       </div>
 
-      <button class="btn__submit mb-2">Submit</button>
+      <button class="btn__submit w-full mb-5 p-3 rounded-[5px] bg-[#38cc8c] text-white font-light shadow-custom-button-shadow">Claim your free trial</button>
+
+      <div class="terms text-center">
+        <span class="normal__terms text-[10px] text-gray-400">By clicking the button, you are agreeing to our</span>
+        <span class="important__terms text-[10px]  text-orange-600 font-bold">Terms and Services</span>
+      </div>
       
     </form>
 

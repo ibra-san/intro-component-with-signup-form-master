@@ -9,6 +9,11 @@ module.exports = {
         "custome-blue": "#6055A5", 
         "custome-red": "#FF7A7A",
         "custome-green":"#38CC8C"
+      }, 
+
+      boxShadow: { 
+        "custome-s-shadow": "0px 7px 1px rgba(0,0,0,0.2)",
+        "custom-button-shadow":"0 4px 1px rgb(21, 81, 55, 0.6)"
       }
     },
   },
