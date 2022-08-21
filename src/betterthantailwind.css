@@ -34,9 +34,27 @@ body {
 }
 
 .fa-solid { 
-    display: none;
+    visibility: hidden;
 } 
 
 small { 
-    display: none;
+    visibility: hidden;
+}
+
+.sucess > input { 
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+.sucess > .fa-circle-check { 
+    visibility: visible;
+    color: hsl(154, 59%, 51%);
+}
+
+.error > input { 
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error > .fa-circle-exclamation, .error > small { 
+    visibility: visible;
+    color: hsl(0, 100%, 74%);
 }
