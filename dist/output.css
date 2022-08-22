@@ -575,6 +575,10 @@ video {
   bottom: -20px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -607,24 +611,12 @@ video {
   min-height: 500px;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-4\/12 {
-  width: 33.333333%;
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -713,8 +705,8 @@ video {
   text-align: center;
 }
 
-.text-\[45px\] {
-  font-size: 45px;
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .text-\[16px\] {
@@ -774,6 +766,11 @@ video {
   color: rgb(234 88 12 / var(--tw-text-opacity));
 }
 
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .shadow-custome-s-shadow {
   --tw-shadow: 0px 7px 1px rgba(0,0,0,0.2);
   --tw-shadow-colored: 0px 7px 1px var(--tw-shadow-color);
@@ -786,6 +783,16 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:bg-green-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
 .focus\:border-slate-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(100 116 139 / var(--tw-border-opacity));
@@ -794,4 +801,50 @@ video {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .lg\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-\[45px\] {
+    font-size: 45px;
+  }
 }

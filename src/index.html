@@ -12,15 +12,15 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
-<body class="bg-fixed flex flex-row justify-center items-center min-h-screen gap-[50px]" >
+<body class="bg-fixed flex flex-col lg:flex-row justify-center items-center min-h-screen gap-[50px]" >
 
-  <div class="section1 w-[35%] flex flex-col gap-8">
-    <h1 class="title w-[100%] text-zinc-50 text-[45px] leading-tight font-bold" >Learn to code by watching others</h1>
+  <div class="section1 sm:w-[80%] md:w-[50%] lg:w-[35%] flex flex-col justify-center items-center text-center lg:text-left mt-10 lg:mt-0  gap-8">
+    <h1 class="title w-[80%] lg:w-[100%] text-zinc-50 text-[30px] lg:text-[45px] leading-tight font-bold" >Learn to code by watching others</h1>
     <p class="main_text text-zinc-50">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
     but understanding how developers think is invaluable.</p>
   </div>
 
-  <div class="section2 min-h-[500px] w-4/12 flex flex-col gap-5 ">
+  <div class="section2 min-h-[500px] w-[80%] md:w-6/12 lg:w-4/12 flex flex-col gap-5 ">
 
     <div class="offer bg-custome-blue text-zinc-50 py-[15px] px-[20px] text-center text-[16px] rounded-md shadow-custome-s-shadow" >
      <strong>Try it free 7 days</strong> <span class="font-light">then $20/mo. thereafter</span> 
@@ -59,7 +59,7 @@
         <small class="absolute right-[0px] text-[8px] text-red-400 font-bold italic bottom-[-20px]">Error Message</small>
       </div>
 
-      <button type="submit" class="btn__submit w-full mb-5 p-3 rounded-[5px] bg-[#38cc8c] text-white font-light shadow-custom-button-shadow">Claim your free trial</button>
+      <button type="submit" class="btn__submit w-full mb-5 p-3 rounded-[5px] bg-[#38cc8c] text-white font-light shadow-custom-button-shadow hover:bg-green-300">Claim your free trial</button>
 
       <div class="terms text-center">
         <span class="normal__terms text-[10px] text-gray-400">By clicking the button, you are agreeing to our</span>
@@ -71,7 +71,7 @@
     <footer>
       <p class="attribution text-[11px] text-center ">
         Challenge by <a class="color-[#3e52a3]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a class="color-[#3e52a3]" href="#">Your Name Here</a>.
+        Coded by <a class="color-[#3e52a3]" href="https://imsan.netlify.app/" target="_blank"> <span class="italic font-bold underline">imsan</span></a>.
       </p>
     </footer>
 
