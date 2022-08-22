@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/000417e876.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="betterthantailwind.css">
+  <script src="./script.js" defer></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 
@@ -26,17 +27,17 @@
     </div>
     
     <form action="/" class="form bg-white p-8 inline-block rounded-[10px] shadow-custome-s-shadow" id="form">
-      <div class="form_control w-full mb-10 relative sucess" id="firstName">
+      <div class="form_control w-full mb-10 relative">
         <label for="first_name" class="hidden">First Name</label>
-        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="text" placeholder="First Name">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" id="firstName" type="text" placeholder="First Name" >
         <i class="fa-solid fa-circle-check absolute top-[17px] right-[10px]"></i>
         <i class="fa-solid fa-circle-exclamation absolute top-[17px] right-[10px]"></i>
         <small class="absolute right-[0px] text-[8px] text-red-400 font-bold italic bottom-[-20px]">Error Message</small>
       </div>
 
-      <div class="form_control w-full mb-10 relative error">
+      <div class="form_control w-full mb-10 relative">
         <label for="last_name" class="hidden">Last Name</label>
-        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="text" placeholder="Last Name">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="text" placeholder="Last Name" id="lastName">
         <i class="fa-solid fa-circle-check absolute top-[17px] right-[10px]"></i>
         <i class="fa-solid fa-circle-exclamation absolute top-[17px] right-[10px]"></i>
         <small class="absolute right-[0px] text-[8px] text-red-400 font-bold italic bottom-[-20px]">Error Message</small>
@@ -44,7 +45,7 @@
 
       <div class="form_control w-full mb-10 relative">
         <label for="email" class="hidden">email</label>
-        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="email" placeholder="Email">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="email" placeholder="Email" id="email">
         <i class="fa-solid fa-circle-check absolute top-[17px] right-[10px]"></i>
         <i class="fa-solid fa-circle-exclamation absolute top-[17px] right-[10px]"></i>
         <small class="absolute right-[0px] text-[8px] text-red-400 font-bold italic bottom-[-20px]">Error Message</small>
@@ -52,13 +53,13 @@
 
       <div class="form_control w-full mb-10 relative">
         <label for="password" class="hidden">password</label>
-        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="password" placeholder="Password">
+        <input class="block w-full border border-1 border-gray-200 rounded-[5px] p-3 focus:outline-none focus:border-1 focus:border-slate-500" type="password" placeholder="Password" id="password">
         <i class="fa-solid fa-circle-check absolute top-[17px] right-[10px]"></i>
         <i class="fa-solid fa-circle-exclamation absolute top-[17px] right-[10px]"></i>
         <small class="absolute right-[0px] text-[8px] text-red-400 font-bold italic bottom-[-20px]">Error Message</small>
       </div>
 
-      <button class="btn__submit w-full mb-5 p-3 rounded-[5px] bg-[#38cc8c] text-white font-light shadow-custom-button-shadow">Claim your free trial</button>
+      <button type="submit" class="btn__submit w-full mb-5 p-3 rounded-[5px] bg-[#38cc8c] text-white font-light shadow-custom-button-shadow">Claim your free trial</button>
 
       <div class="terms text-center">
         <span class="normal__terms text-[10px] text-gray-400">By clicking the button, you are agreeing to our</span>

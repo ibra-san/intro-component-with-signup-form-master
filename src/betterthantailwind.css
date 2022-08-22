@@ -41,11 +41,11 @@ small {
     visibility: hidden;
 }
 
-.sucess > input { 
+.success > input { 
     border: 2px solid hsl(154, 59%, 51%);
 }
 
-.sucess > .fa-circle-check { 
+.success > .fa-circle-check { 
     visibility: visible;
     color: hsl(154, 59%, 51%);
 }
